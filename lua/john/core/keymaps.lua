@@ -12,6 +12,8 @@ keymap.set("n", "<leader>sm", ":MaximizerToggle<cr>") -- maximize the window, or
 -- Nvimtree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>")
 
+-- Markdownpreview
+keymap.set("n", "<leader>mp", ":MarkdownPreview<cr>")
 -- custum setting
 keymap.set("n", "a", "A")
 keymap.set("i", "ii", "<Esc>")

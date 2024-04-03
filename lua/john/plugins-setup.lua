@@ -85,6 +85,15 @@ return require("packer").startup(function(use)
 	use("nvim-tree/nvim-web-devicons")
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
+	-- markdown preview
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = "cd app && npm install",
+		setup = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	})
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then
