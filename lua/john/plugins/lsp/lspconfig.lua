@@ -53,6 +53,11 @@ end
 
 -- configure cpp clangd
 lspconfig["clangd"].setup({
+	cmd = {
+		"clangd",
+		"--log=verbose",
+		"--pretty",
+	},
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
